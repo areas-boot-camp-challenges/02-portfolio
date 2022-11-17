@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="./assets/output.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/output.css">
     <title>Christian’s Portfolio</title>
   </head>
   <body>
@@ -33,38 +33,58 @@
     
     <main>
 
-      <header id="header" class="flex justify-between items-center">
-        <h1 class="text-7xl"><a href="#">areas.me</a></h1>
+      <header id="header" class="flex justify-between items-center px-10 py-5 bg-gray-100">
+        <h1 class="text-7xl bg-black pl-1 pr-5 text-white"><a href="#">areas.me</a></h1>
         <nav>
-          <ul class="flex text-3xl">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul
+            class="flex text-3xl space-x-10">
+            <li><a class="bg-black text-white pl-1 pr-5" href="#who">Who</a></li>
+            <li><a class="bg-black text-white pl-1 pr-5" href="#portfolio">Portfolio</a></li>
+            <li><a class="bg-black text-white pl-1 pr-5" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
 
-      <section id="about">
-        <h2 class="text-4xl">About</h2>
-        <p>Hello 👋🏽</p>
-        <p>My name’s Christian</p>
-        <p>I’m a Senior Technical Writer</p>
+      <section id="who" class="flex p-10">
+        <h2 class="text-4xl basis-1/6">Who</h2>
+        <section class="basis-5/6">
+          <img class="max-w-xs rounded-full" src="./assets/images/christian.jpeg">
+          <p class="text-3xl font-bold">Hello 👋🏽</p>
+          <p class="text-2xl">My name’s Christian</p>
+          <p class="text-xl font-thin ">I’m a Senior Technical Writer who writes code.</p>
+        </section>
       </section>
 
-      <section id="contact">
-        <h2 class="text-4xl">Contact</h2>
-        <ul class="flex">
-          <li><a href="http://linkedin.com/in/christianareas">LinkedIn</a></li>
-          <li><a href="https://github.com/christianareas">GitHub</a></li>
-          <li><a href="mailto:me@areas.me">me@areas.me</a></li>
-        </ul>
+      <section id="portfolio" class="flex p-10">
+        <h2 class="text-4xl basis-1/6">Porfolio</h2>
+        <section>
+          <section id="portfolio-highlight" class="portfolio-item"></section>
+          <section class="portfolio-item"></section>
+          <section class="portfolio-item"></section>
+        </section>
       </section>
 
-      <section id="portfolio">
-        <h2 class="text-4xl">Porfolio</h2>
-        <section id="portfolio-highlight" class="portfolio-item"></section>
-        <section class="portfolio-item"></section>
-        <section class="portfolio-item"></section>
+      <section id="contact" class="flex p-10">
+        <h2 class="text-4xl basis-1/6">Contact</h2>
+        <section>
+          <ul class="flex justify-between space-x-10">
+            <li>
+              <button type="button" class="px-6 py-2 border-4 border-gray-800 font-bold leading-tight rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                <a href="http://linkedin.com/in/christianareas">LinkedIn</a>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="px-6 py-2 border-4 border-gray-800 font-bold leading-tight rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                <a href="https://github.com/christianareas">GitHub</a>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="px-6 py-2 border-4 border-gray-800 font-bold leading-tight rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                <a href="mailto:me@areas.me">Email</a>
+              </button>
+            </li>
+          </ul>
+        </section>
       </section>
 
       <footer>
@@ -74,3 +94,10 @@
 
   </body>
 </html>
+
+
+<div class="flex space-x-2 justify-center">
+  <div>
+    
+  </div>
+</div>
