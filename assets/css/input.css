@@ -25,7 +25,7 @@ header {
     pr-5
 }
 
-#navigation {
+#navigation-list {
   @apply
     flex
     text-3xl
@@ -62,6 +62,7 @@ header {
   @apply
     basis-5/6
     pl-5
+    pr-20
 }
 
 /* Who Section */
@@ -89,13 +90,27 @@ header {
 }
 
 /* Portfolio Section */
+#portfolio-container {
+  @apply
+    grid
+    grid-cols-2
+}
 
+#portfolio-highlight {
+  @apply
+    col-span-2
+}
+
+.portfolio-item {
+  @apply
+    p-5    
+}
 
 /* Contact Section */
 #contact-list {
   @apply
     flex
-    space-x-10
+    justify-around
 }
 
 .contact-item {

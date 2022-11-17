@@ -513,22 +513,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.flex {
-  display: flex;
-}
-
 .resize {
   resize: both;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 body {
@@ -556,17 +542,17 @@ header {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-#navigation {
+#navigation-list {
   display: flex;
 }
 
-#navigation > :not([hidden]) ~ :not([hidden]) {
+#navigation-list > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-#navigation {
+#navigation-list {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
@@ -603,6 +589,7 @@ header {
 .section-content {
   flex-basis: 83.333333%;
   padding-left: 1.25rem;
+  padding-right: 5rem;
 }
 
 /* Who Section */
@@ -631,16 +618,24 @@ header {
 
 /* Portfolio Section */
 
+#portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#portfolio-highlight {
+  grid-column: span 2 / span 2;
+}
+
+.portfolio-item {
+  padding: 1.25rem;
+}
+
 /* Contact Section */
 
 #contact-list {
   display: flex;
-}
-
-#contact-list > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  justify-content: space-around;
 }
 
 .contact-item {
