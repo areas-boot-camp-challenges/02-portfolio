@@ -1,3 +1,109 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Header and Navigation */
+#header {
+  @apply
+    flex
+    justify-between
+    items-center
+    bg-gray-100
+    px-10
+    py-5
+}
+
+#logo {
+  @apply
+    text-7xl
+    text-white
+    bg-black
+    pl-1
+    pr-5
+}
+
+#navigation {
+  @apply
+    flex
+    text-3xl
+    space-x-10
+}
+
+.navigation-item {
+  @apply
+  text-white
+  bg-black
+  pl-1
+  pr-5
+}
+
+/* All Sections */
+.section {
+  @apply
+    flex
+    p-10
+}
+
+.section-header {
+  @apply
+    basis-1/6
+    text-4xl
+    text-right
+    border-r-4
+    border-black
+    pr-5
+}
+
+.section-content {
+  @apply
+    basis-5/6
+    pl-5
+}
+
+/* Who Section */
+
+#christian {
+  @apply
+    max-w-xs
+    rounded-full
+}
+
+#hello {
+  @apply
+    text-3xl
+    font-bold
+}
+
+#my-name-is {
+  @apply
+    text-2xl
+}
+
+#tell-me-more {
+  @apply
+    text-xl
+    font-thin
+}
+
+/* Portfolio Section */
+
+
+
+/* Code Section */
+
+#contact-list {
+  @apply
+    flex
+    space-x-10
+}
+
+.contact-item {
+  @apply
+    text-xl
+    leading-normal
+    ml-10
+    px-1
+    pb-1
+    border-b-2
+    border-black
+}
