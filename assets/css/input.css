@@ -2,20 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply
+    bg-gray-100
+}
+
 /* Header and Navigation */
-#header {
+header {
   @apply
     flex
     justify-between
     items-center
-    bg-gray-100
-    px-10
-    py-5
+    p-10
 }
 
 #logo {
   @apply
-    text-7xl
+    text-6xl
     text-white
     bg-black
     pl-1
@@ -42,6 +45,7 @@
   @apply
     flex
     p-10
+    bg-white
 }
 
 .section-header {
@@ -61,7 +65,6 @@
 }
 
 /* Who Section */
-
 #christian {
   @apply
     max-w-xs
@@ -88,9 +91,7 @@
 /* Portfolio Section */
 
 
-
 /* Code Section */
-
 #contact-list {
   @apply
     flex
@@ -106,4 +107,11 @@
     pb-1
     border-b-2
     border-black
+}
+
+/* Footer */
+footer {
+  @apply
+    px-10
+    py-5
 }
