@@ -103,7 +103,8 @@ header {
 
 .portfolio-item {
   @apply
-    p-5    
+    px-10
+    pb-10
 }
 
 /* Contact Section */

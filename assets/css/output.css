@@ -628,7 +628,9 @@ header {
 }
 
 .portfolio-item {
-  padding: 1.25rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 /* Contact Section */
