@@ -83,10 +83,17 @@ header {
     text-2xl
 }
 
-#tell-me-more {
+.tell-me-more {
   @apply
     text-xl
     font-thin
+    pt-2
+    indent-5
+}
+
+.first-paragraph {
+  @apply
+    indent-0
 }
 
 /* Portfolio Section */
@@ -94,6 +101,7 @@ header {
   @apply
     grid
     grid-cols-2
+    gap-5
 }
 
 #portfolio-highlight {
@@ -101,10 +109,33 @@ header {
     col-span-2
 }
 
-.portfolio-item {
+#portfolio-highlight a,
+.portfolio-item a {
   @apply
-    px-10
-    pb-10
+    relative
+}
+
+#portfolio-highlight section,
+.portfolio-item section {
+  @apply
+    absolute
+    bottom-20
+    bg-white
+    px-5
+    py-2
+    opacity-90
+}
+
+#portfolio-highlight h3,
+.portfolio-item h3 {
+  @apply
+    text-4xl
+}
+
+#portfolio-highlight p,
+.portfolio-item p {
+  @apply
+    text-xl
 }
 
 /* Contact Section */
