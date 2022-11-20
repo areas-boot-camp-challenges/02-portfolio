@@ -634,8 +634,8 @@ header {
   grid-column: span 2 / span 2;
 }
 
-#portfolio-highlight a,
-.portfolio-item a {
+#portfolio-highlight,
+.portfolio-item {
   position: relative;
 }
 

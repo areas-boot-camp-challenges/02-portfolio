@@ -109,8 +109,8 @@ header {
     col-span-2
 }
 
-#portfolio-highlight a,
-.portfolio-item a {
+#portfolio-highlight,
+.portfolio-item {
   @apply
     relative
 }
