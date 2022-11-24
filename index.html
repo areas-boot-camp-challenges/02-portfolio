@@ -6,7 +6,7 @@
     <link type="text/css" rel="stylesheet" href="./assets/css/output.css">
     <title>Christian’s Portfolio</title>
   </head>
-  <body>
+  <body class="bg-gray-200">
     
     <!--
       Challenge requirements:
@@ -33,34 +33,32 @@
     
     <main>
 
-      <header>
-        <h1 id="logo"><a href="#">areas.me</a></h1>
-        <nav>
-          <ul id="navigation-list">
-            <li><a class="navigation-item" href="#who">Who</a></li>
-            <li><a class="navigation-item" href="#portfolio">Portfolio</a></li>
-            <li><a class="navigation-item" href="#contact">Contact</a></li>
-            <li><a class="navigation-item" href="#">Resume</a></li>
-          </ul>
-        </nav>
+      <header class="grid grid-cols-1 bg-white justify-items-center gap-5">
+        <a class="text-6xl text-white bg-black m-5 px-5 py-1" href="#">areas.me</a>
       </header>
 
-      <section id="who" class="section">
-        <h2 class="section-header">Who</h2>
-        <section class="section-content">
-          <img id="christian" src="./assets/images/christian.jpeg">
-          <p id="hello">Hello 👋🏽</p>
-          <p id="my-name-is">My name’s Christian</p>
-          <p class="tell-me-more first-paragraph">I help developers communicate. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <p class="tell-me-more">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <nav class="grid grid-cols-1 bg-white justify-items-center gap-5">
+        <a class="text-3xl text-white bg-black px-5 py-1" href="#who">Who</a>
+        <a class="text-3xl text-white bg-black px-5 py-1" href="#portfolio">Portfolio</a>
+        <a class="text-3xl text-white bg-black px-5 py-1" href="#contact">Contact</a>
+        <a class="text-3xl text-white bg-black mb-5 px-5 py-1" href="#">Resume</a>
+      </nav>
+
+      <section class="grid grid-cols-1 justify-items-center gap-5 m-5">
+        <h2 class="text-4xl px-20 py-1 border-b-2 border-black">Who</h2>
+        <section class="text-center">
+          <img class="max-w-xs rounded-full" src="./assets/images/christian.jpeg">
+          <p class="text-3xl px-5 py-1 font-bold">Hello 👋🏽</p>
+          <p class="text-2xl px-5 py-1">My name’s Christian</p>
+          <p class="text-xl px-5 py-1 font-thin">I help developers communicate.</p>
         </section>
       </section>
 
-      <section id="portfolio" class="section">
+      <!-- <section id="portfolio" class="section">
         <h2 class="section-header">Porfolio</h2>
         <section id="portfolio-container" class="section-content">
           <section id="portfolio-highlight">
-            <a href="https://areas-boot-camp.github.io/karaoke/">
+            <a href="https://areas-boot-camp.github.io/karaoke/" target="_blank">
               <img src="assets/images/karaoke-app.jpg">
               <section>
                 <h3>Karaoke Finder</h3>
@@ -69,34 +67,32 @@
             </a>
           </section>
           <section class="portfolio-item">
-            <a href="#">
+            <a href="#" target="_blank">
               <img src="assets/images/placeholder.png">
               <section>
-                <h3>Title</h3>
-                <p>Subtitle</p>
+                <h3>Placeholder Project</h3>
+                <p>JavaScript, HTML, CSS, and Node.js</p>
               </section>
             </a>
           </section>
           <section class="portfolio-item">
-            <a href="#">
+            <a href="#" target="_blank">
               <img src="assets/images/placeholder.png">
               <section>
-                <h3>Title</h3>
-                <p>Subtitle</p>
+                <h3>Placeholder Project</h3>
+                <p>JavaScript, HTML, CSS, Node.js, and Express.js</p>
               </section>
               </a>
           </section>
         </section>
-      </section>
+      </section> -->
 
-      <section id="contact" class="section">
-        <h2 class="section-header">Contact</h2>
-        <section class="section-content">
-          <ul id="contact-list">
-            <li><a class="contact-item" href="http://linkedin.com/in/christianareas">LinkedIn</a></li>
-            <li><a class="contact-item" href="https://github.com/christianareas">GitHub</a></li>
-            <li><a class="contact-item" href="mailto:me@areas.me">Email</a></li>
-          </ul>
+      <section class="grid grid-cols-1 justify-items-center gap-5 m-5">
+        <h2 class="text-4xl px-20 py-1 border-b-2 border-black">Contact</h2>
+        <section class="grid grid-cols-1 justify-items-center gap-5">
+          <a class="text-xl px-1 py-1 border-b-2 border-black" href="http://linkedin.com/in/christianareas">LinkedIn</a>
+          <a class="text-xl px-1 py-1 border-b-2 border-black" href="https://github.com/christianareas">GitHub</a>
+          <a class="text-xl px-1 py-1 border-b-2 border-black" href="mailto:me@areas.me">Email</a>
         </section>
       </section>
 

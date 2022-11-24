@@ -2,105 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply
-    bg-gray-100
-}
-
-/* Header and Navigation */
-header {
-  @apply
-    flex
-    justify-between
-    items-center
-    p-10
-}
-
-#logo {
-  @apply
-    text-6xl
-    text-white
-    bg-black
-    pl-1
-    pr-5
-}
-
-#navigation-list {
-  @apply
-    flex
-    text-3xl
-    space-x-10
-}
-
-.navigation-item {
-  @apply
-  text-white
-  bg-black
-  pl-1
-  pr-5
-}
-
-/* All Sections */
-.section {
-  @apply
-    flex
-    p-10
-    bg-white
-}
-
-.section-header {
-  @apply
-    basis-1/6
-    text-4xl
-    text-right
-    border-r-4
-    border-black
-    pr-5
-}
-
-.section-content {
-  @apply
-    basis-5/6
-    pl-5
-    pr-20
-}
-
-/* Who Section */
-#christian {
-  @apply
-    max-w-xs
-    rounded-full
-}
-
-#hello {
-  @apply
-    text-3xl
-    font-bold
-}
-
-#my-name-is {
-  @apply
-    text-2xl
-}
-
-.tell-me-more {
-  @apply
-    text-xl
-    font-thin
-    pt-2
-    indent-5
-}
-
-.first-paragraph {
-  @apply
-    indent-0
-}
-
 /* Portfolio Section */
 #portfolio-container {
   @apply
     grid
-    grid-cols-2
+    grid-cols-1
+    lg:grid-cols-2
     gap-5
 }
 
