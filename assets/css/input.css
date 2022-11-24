@@ -2,25 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Portfolio Section */
-#portfolio-container {
-  @apply
-    grid
-    grid-cols-1
-    lg:grid-cols-2
-    gap-5
-}
-
-#portfolio-highlight {
-  @apply
-    col-span-2
-}
-
-#portfolio-highlight,
-.portfolio-item {
-  @apply
-    relative
-}
 
 #portfolio-highlight section,
 .portfolio-item section {
@@ -43,29 +24,4 @@
 .portfolio-item p {
   @apply
     text-xl
-}
-
-/* Contact Section */
-#contact-list {
-  @apply
-    flex
-    justify-around
-}
-
-.contact-item {
-  @apply
-    text-xl
-    leading-normal
-    ml-10
-    px-1
-    pb-1
-    border-b-2
-    border-black
-}
-
-/* Footer */
-footer {
-  @apply
-    px-10
-    py-5
 }
