@@ -2,10 +2,11 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Professional Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./assets/css/output.css">
+    <title>Christian’s Portfolio</title>
   </head>
-  <body>
+  <body class="bg-gray-200">
     
     <!--
       Challenge requirements:
@@ -32,30 +33,78 @@
     
     <main>
 
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <header class="grid grid-cols-1 lg:grid-cols-3 bg-white justify-items-center gap-2">
+        <a class="text-5xl sm:text-7xl text-black lg:justify-self-start mt-5 lg:mt-0 px-5 py-1" href="#">areas.me</a>
+        <nav class="grid lg:col-span-2 grid-cols-1 sm:grid-cols-4 bg-white text-center lg:justify-self-end gap-2">
+          <a class="text-2xl sm:text-4xl text-white bg-black w-28 sm:w-36 mb-0 sm:mb-5 lg:mt-5 py-1" href="#who">Who</a>
+          <a class="text-2xl sm:text-4xl text-white bg-black w-28 sm:w-36 mb-0 sm:mb-5 lg:mt-5 py-1" href="#portfolio">Portfolio</a>
+          <a class="text-2xl sm:text-4xl text-white bg-black w-28 sm:w-36 mb-0 sm:mb-5 lg:mt-5 py-1" href="#contact">Contact</a>
+          <a class="text-2xl sm:text-4xl text-white bg-black w-28 sm:w-36 mb-5 lg:mt-5 py-1" href="#">Resume</a>
+        </nav>  
+      </header>
 
-      <section id="about">
-        <h2>About</h2>
-        
-      </section>
+      <article class="grid grid-cols-1 lg:grid-cols-5 justify-items-center lg:justify-items-start gap-5 m-5">
+        <header class="lg:justify-self-end">
+          <h2 id="who" class="text-3xl sm:text-5xl border-b-4 lg:border-b-0 border-black px-16 py-1 lg:px-0">Who</h2>
+        </header>
+        <section class="lg:col-span-4 text-center lg:text-left lg:border-l-4 lg:border-black lg:pl-5">
+          <img class="max-w-xs sm:max-w-md rounded-full" src="./assets/images/christian.jpeg">
+          <p class="text-3xl sm:text-5xl px-5 py-1 font-bold">Hello 👋🏽</p>
+          <p class="text-2xl sm:text-4xl px-5 py-1">My name’s Christian</p>
+          <p class="text-xl sm:text-2xl px-5 py-1 font-thin">I help developers communicate.</p>
+        </section>
+      </article>
 
-      <section id="portfolio">
-        <h2>Porfolio</h2>
-        <section id="portfolio-highlight" class="portfolio-item"></section>
-        <section class="portfolio-item"></section>
-        <section class="portfolio-item"></section>
-      </section>
+      <article class="grid grid-cols-1 lg:grid-cols-5 justify-items-center lg:justify-items-start gap-5 m-5">
+        <header class="lg:justify-self-end">
+          <h2 id="portfolio" class="text-3xl sm:text-5xl border-b-4 lg:border-b-0 border-black px-16 py-1 lg:px-0">Portfolio</h2>
+        </header>
+        <section class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:col-span-4 lg:border-l-4 lg:border-black lg:pl-5">
+          <article class="relative sm:col-span-2">
+            <a href="https://areas-boot-camp.github.io/karaoke/" target="_blank">
+              <img src="assets/images/karaoke-app.jpg">
+              <div class="absolute bottom-6 sm:bottom-10 md:bottom-14 bg-white py-1 pl-2 pr-6 sm:py-2 sm:pl-3 sm:pr-10 opacity-90">
+                <h3 class="text-xl sm:text-4xl font-bold">Karaoke Finder</h3>
+                <p class="text-base sm:text-3xl font-thin">JavaScript, HTML, and CSS</p>
+              </div>
+            </a>
+          </article>
+          <article class="relative">
+            <a href="#" target="_blank">
+              <img src="assets/images/placeholder.png">
+              <div class="absolute bottom-6 sm:bottom-10 md:bottom-14 bg-white py-1 pl-2 pr-6 sm:py-2 sm:pl-3 sm:pr-10 opacity-90">
+                <h3 class="text-xl lg:text-4xl font-bold">Project Name</h3>
+                <p class="text-base lg:text-3xl font-thin">List of Technologies</p>
+              </div>
+            </a>
+          </article>
+          <article class="relative">
+            <a href="#" target="_blank">
+              <img src="assets/images/placeholder.png">
+              <div class="absolute bottom-6 sm:bottom-10 md:bottom-14 bg-white py-1 pl-2 pr-6 sm:py-2 sm:pl-3 sm:pr-10 opacity-90">
+                <h3 class="text-xl lg:text-4xl font-bold">Project Name</h3>
+                <p class="text-base lg:text-3xl font-thin">List of Technologies</p>
+              </div>
+            </a>
+          </article>
+        </section>
+      </article>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        
-      </section>
+      <article class="grid grid-cols-1 lg:grid-cols-5 justify-items-center lg:justify-items-start gap-5 m-5">
+        <header class="lg:justify-self-end">
+          <h2 id="contact" class="text-3xl sm:text-5xl border-b-4 lg:border-b-0 border-black px-16 py-1 lg:px-0">Contact</h2>
+        </header>
+        <section class="lg:col-span-4 lg:border-l-4 lg:border-black lg:py-5 lg:pl-5">
+        <!-- todo: center text no matter the viewport size (using padding right now, which isn’t the best) -->
+          <a class="text-lg sm:text-3xl text-blue-400 underline px-5 lg:px-16 xl:px-28" href="http://linkedin.com/in/christianareas">LinkedIn</a>
+          <a class="text-lg sm:text-3xl text-blue-400 underline px-5 lg:px-16 xl:px-28" href="https://github.com/christianareas">GitHub</a>
+          <a class="text-lg sm:text-3xl text-blue-400 underline px-5 lg:px-16 xl:px-28" href="mailto:me@areas.me">Email</a>
+        </section>
+      </article>
+
+      <footer>
+      </footer>
+
     </main>
 
   </body>
