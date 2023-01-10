@@ -8,7 +8,7 @@ This site is built with HTML, CSS, and [Tailwind CSS](https://tailwindcss.com). 
 
 ## Usage
 
-This project is available at [areas-boot-camp.github.io/02-portfolio/](https://areas-boot-camp.github.io/02-portfolio/).
+This project is available at [areas-boot-camp-challenges.github.io/02-portfolio/](https://areas-boot-camp-challenges.github.io/02-portfolio/).
 
 ![A screenshot of the professional portfolio site](./assets/images/professional-portfolio.png)
 
